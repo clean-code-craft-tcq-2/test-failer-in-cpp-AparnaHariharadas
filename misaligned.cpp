@@ -2,6 +2,17 @@
 #include <assert.h>
 
 int colour_index_checker;
+
+const char* majorMinorColourFinder(int major_index, int Minor_index)
+{
+    const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
+    const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
+    major_color = majorColor[major_index];
+    minor_color = minorColor[minor_index];
+    colour_index_checker = major_index * minor_index + 1
+    return major_color, minor_color;
+}
+
 int printColorMap() {
     const char* major_col, minor_col;
     int i = 0, j = 0;
@@ -12,16 +23,6 @@ int printColorMap() {
         }
     }
     return i * j;
-}
-
-const char* majorMinorColourFinder(int major_index, int Minor_index)
-{
-    const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
-    const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
-    major_color = majorColor[major_index];
-    minor_color = minorColor[minor_index];
-    colour_index_checker = major_index * minor_index + 1
-    return major_color, minor_color;
 }
 
 int main() {
