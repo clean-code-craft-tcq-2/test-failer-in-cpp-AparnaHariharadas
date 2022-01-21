@@ -9,8 +9,8 @@ char majorMinorColourFinder(int major_index, int minor_index)
     char major_color, minor_color;
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
-    major_color = majorColor[major_index];
-    minor_color = minorColor[minor_index];
+    major_color =(char) majorColor[major_index];
+    minor_color = (char)minorColor[minor_index];
     colour_index_checker = major_index * minor_index + 1;
     return major_color, minor_color;
 }
