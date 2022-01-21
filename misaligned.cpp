@@ -11,7 +11,7 @@ const char* majorMinorColourFinder(int major_index, int minor_index)
     const char* major_color = majorColor[major_index];
     const char* minor_color =minorColor[minor_index];
     colour_index_checker = major_index * minor_index + 1;
-    return major_color, minor_color;
+    return (major_color, minor_color);
 }
 
 int printColorMap() {
@@ -19,7 +19,7 @@ int printColorMap() {
     int i = 0, j = 0;
     for(i = 0; i < 5; i++) {
         for(j = 0; j < 5; j++) {
-            const char* major_col, minor_col, major_col, minor_col = majorMinorColourFinder(i,j);
+            const char* major_col, minor_col = majorMinorColourFinder(i,j);
             std::cout << i * 5 + j << " | " << major_col << " | " << minor_col << "\n";
         }
     }
