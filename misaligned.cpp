@@ -1,5 +1,6 @@
 #include <iostream>
 #include <assert.h>
+#include <iomanip>
 
 using namespace std;
 int colour_index_checker;
