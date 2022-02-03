@@ -6,8 +6,11 @@ int networkAlertStub(float celcius) {
     if (celcius > 100)
     {
           checkalertFailureCount += 1;
+          return 500;
     }
-    return 200;
+    else
+        return 200;
+    
 }
 
 void alertInCelcius(float farenheit) {
