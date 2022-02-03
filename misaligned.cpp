@@ -1,13 +1,4 @@
-#include <iostream>
-#include <assert.h>
-#include <iomanip>
-
-using namespace std;
-int colour_index_checker;
-#define COLORMULTIPLIER 5
-
-const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
-const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
+#include "misaligned.h"
 
 void majorMinorColourIndexFinder(int major_index, int minor_index)
 {
@@ -25,11 +16,4 @@ int printColorMap() {
         }
     }
     return i *COLORMULTIPLIER + j + 1;
-}
-
-int main() {
-    int result = printColorMap();
-    assert(result == colour_index_checker);
-    cout << "All is well (maybe!)\n";
-    return 0;
 }
