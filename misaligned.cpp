@@ -1,4 +1,6 @@
-#include "misaligned.h"
+//#include "misaligned.h"
+#include <iostream>
+#include <iomanip>
 
 void majorMinorColourIndexFinder(int major_index, int minor_index)
 {
