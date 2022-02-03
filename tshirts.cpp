@@ -15,6 +15,12 @@ char size(int cms) {
     return sizeName;
 }
 
+
+void testTshirtSize(int cms , char expectedSize){
+    assert(size(cms) == expectedSize);
+    std::cout << "All is well (maybe!)\n";
+}
+
 int main() {
     testTshirtSize(37 , 'S');
     testTshirtSize(40 , 'M');
