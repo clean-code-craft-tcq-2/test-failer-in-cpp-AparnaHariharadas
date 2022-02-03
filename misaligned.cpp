@@ -2,6 +2,14 @@
 #include <iostream>
 #include <iomanip>
 
+using namespace std;
+
+int colour_index_checker;
+#define COLORMULTIPLIER 5
+
+const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
+const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
+
 void majorMinorColourIndexFinder(int major_index, int minor_index)
 {
     colour_index_checker = (major_index *COLORMULTIPLIER + minor_index) + 1;
